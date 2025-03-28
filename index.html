@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XML Tags/Key Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    caption {
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+    }
+    .footnotes {
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>XML Tags/Key Information</caption>
+    <thead>
+      <tr>
+        <th>XML Tags/Key</th>
+        <th>Description</th>
+        <th>Required</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>author</td>
+        <td>Name of the team member who is the author of the information</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>nameSource</td>
+        <td>Name of the site/ object according to the source</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>nameContemporary</td>
+        <td>Contemporary name of the site/ object (if applicable)</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>description</td>
+        <td>Description of the site/object (form, dimensions, etc.)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>provenanceOrigin</td>
+        <td>Information from the source where the site/ object was originally found</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>geographicCoordinates</td>
+        <td>Geographic Coordinates</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>latitude</td>
+        <td>Latitude</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>longitude</td>
+        <td>Longitude</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>geonamesLink</td>
+        <td>Reference link to Geonames</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>pleiadesLink</td>
+        <td>Reference link to Pleiades</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>date</td>
+        <td>Dating of the site/ object according to the source</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>datingCriteria</td>
+        <td>Dating Criteria</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>localizationSource</td>
+        <td>Localization Source</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>localizationCertainty</td>
+        <td>Localization Certainty</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>age</td>
+        <td>Age according to the Source (Prehistory, Iron Age, Roman Age, Late Antiquity, Middle Ages, Ottoman Period)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>provenanceObservedIn</td>
+        <td>Subsequent information where an object was observed</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>geographicCoordinatesObserved</td>
+        <td>Geographic coordinates associated with the subsequent places where the object was observed</td>
+        <td>yes*</td>
+      </tr>
+      <tr>
+        <td>latitudeObserved</td>
+        <td>Latitude</td>
+        <td>yes*</td>
+      </tr>
+      <tr>
+        <td>longitudeObserved</td>
+        <td>Longitude</td>
+        <td>yes*</td>
+      </tr>
+      <tr>
+        <td>geonamesLinkObserved</td>
+        <td>Subsequent reference link to Geonames</td>
+        <td>yes*</td>
+      </tr>
+      <tr>
+        <td>pleiadesLinkObserved</td>
+        <td>Subsequent reference link to Pleiades</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>dateObserved</td>
+        <td>Dating of the object according to subsequent information</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>datingCriteriaObserved</td>
+        <td>Dating Criteria</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>provenanceOtherLocations</td>
+        <td>When there are other subsequent places where the object was observed</td>
+        <td>yes*</td>
+      </tr>
+      <tr>
+        <td>latitudeOther</td>
+        <td>Latitude</td>
+        <td>yer*</td>
+      </tr>
+      <tr>
+        <td>longitudeOther</td>
+        <td>Longitude</td>
+        <td>yes*</td>
+      </tr>
+      <tr>
+        <td>geonamesLinkOtherLocations</td>
+        <td>Subsequent reference link to Geonames</td>
+        <td>yes*</td>
+      </tr>
+      <tr>
+        <td>dateOtherLocations</td>
+        <td>Date</td>
+        <td>yes*</td>
+      </tr>
+      <tr>
+        <td>datingCriteriaOtherLocations</td>
+        <td>Dating of the object according to other subsequent information</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>currentLocation</td>
+        <td>Current location of the object, e.g. museum repository</td>
+        <td>yes**</td>
+      </tr>
+      <tr>
+        <td>geographicCoordinatesCurrent</td>
+        <td>Geographic coordinates associated with the current location of the object</td>
+        <td>yes**</td>
+      </tr>
+      <tr>
+        <td>latitudeCurrent</td>
+        <td>Latitude</td>
+        <td>yes**</td>
+      </tr>
+      <tr>
+        <td>longitudeCurrent</td>
+        <td>Longitude</td>
+        <td>yes**</td>
+      </tr>
+      <tr>
+        <td>geonamesLinkCurrent</td>
+        <td>Reference for the current location of the object in Geonames</td>
+        <td>yes**</td>
+      </tr>
+      <tr>
+        <td>desc</td>
+        <td>Reference to predetermined categories (Inscriptions, Manuscripts, Cult sites, Communications, Fortifications, Ancient monuments, Other)</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>list</td>
+        <td>Subcategory to the predetermined categories</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>informationDates</td>
+        <td>Start and End Dates of the Information</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>startDate</td>
+        <td>Start date of the Information, if applicable</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>endDate</td>
+        <td>End date of the information, if applicable</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ageContemporary</td>
+        <td>Age to which the site/object relates to according to modern sources</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>originalLanguage</td>
+        <td>Original Language of the Source</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>publicationLanguage</td>
+        <td>Language of the Publication read by the team member</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>sourceInformation</td>
+        <td>Bibliographic/ Archival Information for the Source</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>annotation</td>
+        <td>Commentary from a team member regarding the site/object</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>keyword</td>
+        <td>Keywords used for sorting of the files</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>sourceContent</td>
+        <td>Excerpt or quote from the source</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>copyrightStoragePlace</td>
+        <td>Copyright/ storage place of the source</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>viaf</td>
+        <td>VIAF</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>iiif</td>
+        <td>IIIF</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>authorPublication</td>
+        <td>Author of the source information (travelogue, manuscript, etc.)</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="footnotes">
+    <p>* If there is provenance of the artifacts</p>
+    <p>** If the location is known to us</p>
+  </div>
+</body>
+</html>
